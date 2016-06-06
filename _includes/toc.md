@@ -1,4 +1,4 @@
-# ToC
+# ToC <a href="https://github.com/jtransc/docs.jtransc.com/blob/gh-pages/_includes/toc.md"><i class="fa fa-pencil" aria-hidden="true" style="color:#333;"></i></a>
 
 * [<i class="fa fa-home" aria-hidden="true"></i> Home](/)
 * [<i class="fa fa-question-circle" aria-hidden="true"></i> What is JTransc](/about)

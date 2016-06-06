@@ -3,6 +3,8 @@ layout: default
 title: Maven
 ---
 
+<img src="/usage/maven/maven.svg" width="auto" height="128" />
+
 Maven plugin code can be found here:
 [https://github.com/jtransc/jtransc/blob/master/jtransc-maven-plugin/src/com/jtransc/maven/mojo.kt](https://github.com/jtransc/jtransc/blob/master/jtransc-maven-plugin/src/com/jtransc/maven/mojo.kt)
 

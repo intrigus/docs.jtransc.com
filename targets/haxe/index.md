@@ -3,6 +3,8 @@ layout: default
 title: "Target: haxe"
 ---
 
+<img src="/targets/haxe/haxe.png" width="auto" height="96" />
+
 You can see [Haxe custom annotations here](/jtransc-rt-core/annotations).
 
 ## Haxe classes with useful stuff

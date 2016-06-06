@@ -26,3 +26,4 @@
     * [Haxe: Embed C++ code](/cookbook/haxe-embed-c)
     * [Haxe: Use JNA](/cookbook/haxe-calling-jna)
 * [<i class="fa fa-graduation-cap" aria-hidden="true"></i> Tutorials](/tutorials)
+* [<i class="fa fa-smile-o" aria-hidden="true"></i> Contributing](/contributing)

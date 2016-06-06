@@ -33,6 +33,8 @@ This site is hosted at github and has its own github repository, so you can fork
 Also, pressing the pencil button available in each page, you can see the corresponding file on github.
 And github will provide another pencil button which will create a fork in your user so you can edit the file and do a PR.
 
+You can read [the complete information about <i class="fa fa-smile-o" aria-hidden="true"></i> contributing](/contributing).
+
 ## Social networks
 
 * [Twitter](http://twitter.com/jtransc)

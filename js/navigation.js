@@ -14,7 +14,7 @@ function getQueryVariable(variable) {
             return decodeURIComponent(pair[1]);
         }
     }
-    console.log('Query variable %s not found', variable);
+    //console.log('Query variable %s not found', variable);
     return undefined;
 }
 
@@ -44,11 +44,23 @@ function fixExternalLinksTarget(element) {
   });
 }
 
+function refreshDisqus(url) {
+  if (typeof DISQUS != "undefined") {
+    DISQUS.reset({
+      reload: true,
+      config: function () {
+        this.page.identifier = url;
+        this.page.url = url;
+      }
+    });
+  }
+}
+
 $(document).ready(function() {
   updateSidebar(true);
   fixExternalLinksTarget(document);
 
-  var q = getQueryVariable('q')
+  var q = getQueryVariable('q');
   if (q !== undefined) {
     $('#searchq').val(q);
   }
@@ -56,18 +68,24 @@ $(document).ready(function() {
   $(".sidebar-nav a").click(function() {
     if (this.target == "_blank") return true;
 
-    $("#page-content").load(this.href + " #page-content", function(html) {
+    var newurl = this.href;
+
+    $("#page-content").load(newurl + " #page-content", function(html) {
       try {
-        var title = $(html).filter('title').text();
-        document.title = title;
-        fixExternalLinksTarget('#page-content')
+        var newhtml = $(html);
+        var canonicalUrl = newhtml.filter('link[rel="canonical"]').attr('href');
+        document.title = newhtml.filter('title').text();
+        fixExternalLinksTarget('#page-content');
         $(document.body).animate({ scrollTop: 0 }, 'fast');
+
+        refreshDisqus(canonicalUrl);
+
       } catch (e) {
         console.error(e);
       }
     });
 
-    history.pushState({}, "my page", this.href);
+    history.pushState({}, "my page", newurl);
     updateSidebar(false);
 
     return false;

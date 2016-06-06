@@ -23,7 +23,7 @@ Commands required to generate language-specific binaries:
 
 Update. After this issue is done [https://github.com/jtransc/jtransc/issues/43](https://github.com/jtransc/jtransc/issues/43), haxe is installed automatically at `$HOME/.jtransc/haxe/version/`
 
-## Platform specific
+## Supported platforms
 
 Gradle plugin provides two tasks per target: runXXX which runs application in debug mode (can be slow on C++), and distXXX which generates a release version of the application.
 
@@ -42,6 +42,9 @@ Debugging is still a work in progress. It will work with the [intelliJ plugin](/
     </thead>
     <tbody>
         <tr>
+            <th colspan="6">Desktop targets</th>
+        </tr>
+        <tr>
             <td>Linux</td>
             <td>Native desktop 32/64bit application.</td>
             <td><code>runCpp</code>, <code>distCpp</code></td>
@@ -58,12 +61,77 @@ Debugging is still a work in progress. It will work with the [intelliJ plugin](/
             <td>-</td>
         </tr>
         <tr>
-            <td>Javascript</td>
-            <td>Node or browser application.</td>
-            <td><code>runJs</code>, <code>distJs</code></td>
-            <td>A browser or nodejs commandline.</td>
-            <td><strong>Yes.</strong> Using web inspector</td>
+            <td>OSX</td>
+            <td>Native desktop 64bit application.</td>
+            <td><code>runCpp</code>, <code>distCpp</code></td>
+            <td>Mac OSX operating system. <code>haxelib install hxcpp</code>, <code>haxelib run lime setup mac</code>.</td>
+            <td><strong>Not yet</strong></td>
             <td>-</td>
+        </tr>
+        <tr>
+            <th colspan="6">Terminal targets</th>
+        </tr>
+        <tr>
+            <td>Node.js</td>
+            <td>Node.js application.</td>
+            <td><code>runJs</code>, <code>distJs</code></td>
+            <td>Node.js interpreter.</td>
+            <td><strong>Yes.</strong> Using web inspector</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>PHP</td>
+            <td>PHP application</td>
+            <td><code>runPhp</code>, <code>distPhp</code></td>
+            <td>A PHP interpreter.</td>
+            <td><strong>Not yet</strong></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th colspan="6">Web targets</th>
+        </tr>
+        <tr>
+            <td>Javascript</td>
+            <td>Browser application.</td>
+            <td><code>runHtml5</code>, <code>distHtml5</code></td>
+            <td>A modern browser</td>
+            <td><strong>Yes.</strong> Using web inspector</td>
+            <td>Can't access filesystem directly.</td>
+        </tr>
+        <tr>
+            <td>Flash</td>
+            <td>Adobe Flash SWF</td>
+            <td><code>runSwf</code>, <code>distSwf</code></td>
+            <td>A flashplayer executable / browser with flash plugin</td>
+            <td><strong>Not yet</strong></td>
+            <td>Can't access filesystem directly.</td>
+        </tr>
+        <tr>
+            <th colspan="6">Mobile targets</th>
+        </tr>
+        <tr>
+            <td>Android</td>
+            <td>Android APK</td>
+            <td><code>runAndroid</code>, <code>distAndroid</code></td>
+            <td>An android device. <code>haxelib install hxcpp</code>, <code>haxelib run lime setup android</code></td>
+            <td><strong>Not yet</strong></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>iOS</td>
+            <td>iOS IPA</td>
+            <td><code>runIos</code>, <code>distIos</code></td>
+            <td>A iOS device. A OSX operating system. <code>haxelib install hxcpp</code>, <code>haxelib run lime setup ios</code></td>
+            <td><strong>Not yet</strong></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Tizen</td>
+            <td>Tizen executable</td>
+            <td><code>runTizen</code>, <code>distTizen</code></td>
+            <td><code>haxelib install hxcpp</code>, <code>haxelib run lime setup tizen</code></td>
+            <td><strong>Not yet</strong></td>
+            <td></td>
         </tr>
     </tbody>
 </table>

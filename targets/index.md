@@ -9,6 +9,8 @@ Currently the supported target is [Haxe](/targets/haxe), which by itself targets
 
 ## Supported targets
 
+<img src="/targets/targets.png" />
+
 <table class="table table-striped">
     <thead>
         <tr>

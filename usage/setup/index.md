@@ -29,9 +29,41 @@ Gradle plugin provides two tasks per target: runXXX which runs application in de
 
 Debugging is still a work in progress. It will work with the [intelliJ plugin](/usage/intellij).
 
-Target | Description | Gradle | Requirements | Debuggable | Limitations
------- | ----------- | ------ | ------------ | ---------- | -----------
-Linux  | Native desktop 32/64bit application. | `runCpp`, `distCpp` | Linux operating system. `haxelib run lime setup linux`, `haxelib install hxcpp`. | **Not yet** | -
-Windows  | Native desktop 32/64bit application. | `runCpp`, `distCpp` | Windows operating system. `haxelib run lime setup windows`, `haxelib install hxcpp`. | **Not yet** | -
-Javascript  | Node or browser application | `runJs`, `distJs` | A browser or nodejs commandline | **Yes.** Using web inspector | -
-
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Target</th>
+            <th>Description</th>
+            <th>Gradle</th>
+            <th>Requirements</th>
+            <th>Debuggable</th>
+            <th>Limitations</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Linux</td>
+            <td>Native desktop 32/64bit application.</td>
+            <td><code>runCpp</code>, <code>distCpp</code></td>
+            <td>Linux operating system. <code>haxelib install hxcpp</code>, <code>haxelib run lime setup linux</code>.</td>
+            <td><strong>Not yet</strong></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Windows</td>
+            <td>Native desktop 32/64bit application.</td>
+            <td><code>runCpp</code>, <code>distCpp</code></td>
+            <td>Windows operating system. <code>haxelib install hxcpp</code>, <code>haxelib run lime setup windows</code>.</td>
+            <td><strong>Not yet</strong></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Javascript</td>
+            <td>Node or browser application.</td>
+            <td><code>runJs</code>, <code>distJs</code></td>
+            <td>A browser or nodejs commandline.</td>
+            <td><strong>Yes.</strong> Using web inspector</td>
+            <td>-</td>
+        </tr>
+    </tbody>
+</table>

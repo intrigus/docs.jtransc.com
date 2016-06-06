@@ -24,9 +24,9 @@ JTransc unsderstand some annotations that are defined in the `jtransc-rt-core` r
 When targeting to Haxe, there are some annotations you can use:
 
 * `@HaxeAddAssets({"file1", "file2})` - Include some files as assets
-* `@HaxeAddFilesBeforeBuildTemplate({"file1", "file2"})` - Include to the target generated sources folder some files from resources folder and process using [Minitemplates](Minitemplates). Just before building, after knowing everything from the program.
+* `@HaxeAddFilesBeforeBuildTemplate({"file1", "file2"})` - Include to the target generated sources folder some files from resources folder and process using [Minitemplates](/minitemplates). Just before building, after knowing everything from the program.
 * `@HaxeAddFilesRaw({"file1", "file2"})` - Include to the target generated sources folder some files from resources folder without processing them just as they are.
-* `@HaxeAddFilesTemplate` - Include to the target generated sources folder some files from resources folder and process using [Minitemplates](Minitemplates)
+* `@HaxeAddFilesTemplate` - Include to the target generated sources folder some files from resources folder and process using [Minitemplates](/minitemplates)
 * `@HaxeAddLibraries({"haxe-ws:0.0.6"})` - Include one or more haxe libraries. In the form: `name:version`
 * `@HaxeAddMembers({"var field:Int;"})` - Add some lines at class level. This could include fields, or methods.
 * `@HaxeMeta` - Adds text to the output at meta places. So you can add custom haxe metas.

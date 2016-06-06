@@ -3,6 +3,8 @@ layout: default
 title: Home
 ---
 
+<img src="/i/logo.svg" width="256" height="256" />
+
 ## Introduction
 
 Welcome to the JTransc documentation!

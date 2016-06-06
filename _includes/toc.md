@@ -1,6 +1,7 @@
 # ToC
 
 * [Home](/)
+* [What is JTransc](/about)
 * [Using JTransc](/usage)
   * [<i class="glyphicon glyphicon-cog"></i> Setup](/usage/setup)
   * [<i class="icon-maven"></i> Maven](/usage/maven)

@@ -15,6 +15,7 @@
     * [Optimized API](/jtransc-rt-core/optimized-api)
 * [<i class="fa fa-dot-circle-o" aria-hidden="true"></i> Targets](/targets)
     * [Haxe](/targets/haxe)
+    * [iOS](/targets/ios)
 * [<i class="fa fa-archive" aria-hidden="true"></i> Libraries](/libraries)
     * [jtransc-media](/libraries/jtransc-media)
     * [gdx-backend-jtransc](/libraries/gdx-backend-jtransc)

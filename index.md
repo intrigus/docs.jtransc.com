@@ -9,6 +9,8 @@ title: Home
 
 Welcome to the JTransc documentation!
 
+Jtransc (Java Trans Compiler) is an AOT (ahead of time compiler) that compiles .class and .jar files into a target executable file bundling all the required dependencies in a single file, without requiring a jitter or an external runtime. At the beggining it generated as3 and javascript, but right now there is a single target: haxe. This allows targeting js, as3, c++, c#, java, php and python. This in turn allows running the program on different platforms such as desktop, browsers and mobile.
+
 Lastest version: [![Maven Version](https://img.shields.io/github/tag/jtransc/jtransc.svg?style=flat&label=maven)](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22jtransc-maven-plugin%22)
 
 Here you can find information:

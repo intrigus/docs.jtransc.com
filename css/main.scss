@@ -74,9 +74,14 @@ a img {
   //border: 1px solid white;
   padding: 4px;
   //margin: 4px;
+  opacity: 0.75;
+  transform: scale(1, 1);
   &:hover {
     //border: 1px solid black;
-    box-shadow: rgba(0,0,0,0.3) 0px 0px 8px;
-    transition: box-shadow 0.2s;
+    //box-shadow: rgba(0,0,0,0.3) 0px 0px 8px;
+    opacity: 1.0;
+    transform: scale(1.1, 1.1);
+    transition: opacity 0.1s, transform 0.1s;
+    transition-timing-function: ease-in-out;
   }
 }

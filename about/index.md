@@ -13,8 +13,8 @@ There is a module called jtransc-rt-core that could be included in any project (
 
 These is also a couple of projects for multimedia applications using jtransc:
 
-[jtransc-media](/libraries/jtransc-media) - Which provides a very simple and portable high-level API for multimedia
-[gdx-backend-jtransc](/libraries/jtransc-media) - Which provides a gdx-compatible backend so any gdx project will be able to work (still some rough edges)
+* [jtransc-media](/libraries/jtransc-media) - Which provides a very simple and portable high-level API for multimedia
+* [gdx-backend-jtransc](/libraries/jtransc-media) - Which provides a gdx-compatible backend so any gdx project will be able to work (still some rough edges)
 
 ## How does it work internally?
 

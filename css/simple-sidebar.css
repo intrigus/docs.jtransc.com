@@ -134,3 +134,12 @@
         margin-right: 0;
     }
 }
+
+.sidebar-nav > ul {
+  margin-left: 0 !important;
+}
+
+.sidebar-nav h1 {
+  text-align: left;
+  padding: 0 16px;
+}

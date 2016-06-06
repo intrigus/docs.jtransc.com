@@ -1,8 +1,8 @@
-# Table of Contents
+# ToC
 
 * [Home](/)
 * [Using JTransc](/usage)
-  * [Setup](/usage/setup)
+  * [<i class="glyphicon glyphicon-cog"></i> Setup](/usage/setup)
   * [<i class="icon-maven"></i> Maven](/usage/maven)
   * [<i class="icon-gradle"></i> Gradle](/usage/gradle)
   * [intelliJ plugin](/usage/intellij)

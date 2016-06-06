@@ -64,9 +64,19 @@
   color: white;
 }
 
+/*
+.sidebar-nav li {
+  line-height: 40px;
+}
+*/
+
 .sidebar-nav li {
     text-indent: 20px;
     line-height: 40px;
+}
+
+.sidebar-nav li i {
+  text-indent: 0;
 }
 
 .sidebar-nav li a {
@@ -136,7 +146,7 @@
 }
 
 .sidebar-nav > ul {
-  margin-left: 0 !important;
+  margin: 0;
 }
 
 .sidebar-nav h1 {

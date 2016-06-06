@@ -14,7 +14,7 @@ And the way to use it is to add this to your `pom.xml` file:
     <plugin>
         <groupId>com.jtransc</groupId>
         <artifactId>jtransc-maven-plugin</artifactId>
-        <version>0.2.3</version>
+        <version>${jtransc.version}</version>
         <configuration>
             <mainClass>example.Test</mainClass>
             <targets>

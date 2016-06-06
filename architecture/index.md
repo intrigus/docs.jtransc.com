@@ -1,5 +1,6 @@
 ---
 layout: default
+title: "Architecture"
 ---
 
 ## A simplification of the process

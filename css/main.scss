@@ -55,3 +55,8 @@ $on-laptop:        800px;
 body {
   cursor: default;
 }
+
+.navbar-default {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}

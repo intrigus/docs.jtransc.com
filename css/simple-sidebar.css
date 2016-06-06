@@ -51,12 +51,17 @@
 /* Sidebar Styles */
 
 .sidebar-nav {
+
     position: absolute;
     top: 0;
     width: 250px;
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.sidebar-nav h1, .sidebar-nav h2, .sidebar-nav h3, .sidebar-nav h4 {
+  color: white;
 }
 
 .sidebar-nav li {

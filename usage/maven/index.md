@@ -3,7 +3,8 @@ layout: default
 title: Maven
 ---
 
-Maven plugin code can be found here: https://github.com/jtransc/jtransc/blob/master/jtransc-maven-plugin/src/com/jtransc/maven/mojo.kt
+Maven plugin code can be found here:
+[https://github.com/jtransc/jtransc/blob/master/jtransc-maven-plugin/src/com/jtransc/maven/mojo.kt](https://github.com/jtransc/jtransc/blob/master/jtransc-maven-plugin/src/com/jtransc/maven/mojo.kt)
 
 And the way to use it is to add this to your `pom.xml` file:
 

@@ -20,7 +20,7 @@
   * [gdx-backend-jtransc](/libraries/gdx-backend-jtransc)
 * [Debugging](/debugging)
 * [Cookbook](/cookbook)
-  * [Haxe: Call Haxe Libraries](/cookbook/call-haxe-libraries)
+  * [Haxe: Call Haxe Libraries](/cookbook/haxe-call-libraries)
   * [Haxe: Call Android Native methods](/cookbook/haxe-android)
   * [Haxe: Embed C++ code](/cookbook/haxe-embed-c)
   * [Haxe: Use JNA](/cookbook/haxe-calling-jna)

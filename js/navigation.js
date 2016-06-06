@@ -1,5 +1,5 @@
 // This is a functions that scrolls to #{blah}link
-function goToByScroll(query){
+function goToByScrollCenter(query){
   $('#sidebar-wrapper').animate({
       scrollTop: $(query).offset().top - $('#sidebar-wrapper').height() / 2
   }, 0);
@@ -29,7 +29,7 @@ function updateSidebar(scroll) {
     var active = normalizeUrl(document.location.href) == normalizeUrl(this.href);
     $(this).toggleClass('active', active);
     if (scroll && active) {
-      goToByScroll(this);
+      goToByScrollCenter(this);
     }
   });
 }
@@ -61,10 +61,12 @@ $(document).ready(function() {
         var title = $(html).filter('title').text();
         document.title = title;
         fixExternalLinksTarget('#page-content')
+        $(document.body).animate({ scrollTop: 0 }, 'fast');
       } catch (e) {
         console.error(e);
       }
     });
+
     history.pushState({}, "my page", this.href);
     updateSidebar(false);
 

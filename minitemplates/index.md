@@ -16,7 +16,7 @@ Minitemplates is an embedded simple template engine created for JTransc based on
 
 ## What can I do with Minitemplates?
 
-Inside Minitemplates you have access to [parameters/configuration variables](https://github.com/jtransc/jtransc/wiki/Available-Maven-Options#mandatory) for that build.
+Inside Minitemplates you have access to [parameters/configuration variables](/usage/maven) for that build.
 Also you can get actual target generated names for: `classes`, `methods` and `fields`.
 Generated names could not match ones from the original source in some targets. Also minimizing/obfuscating names could lead to totally different names.
 

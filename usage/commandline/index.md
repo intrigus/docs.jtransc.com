@@ -6,7 +6,7 @@ title: Command-line
 You can use JTransc from the command line.
 
 You can find more information here:
-https://github.com/jtransc/jtransc/tree/master/jtransc-main-run
+[https://github.com/jtransc/jtransc/tree/master/jtransc-main-run](https://github.com/jtransc/jtransc/tree/master/jtransc-main-run)
 
 There is a `jtransc` script in `jtransc-main-run` module. You can call it directly.
 Or you can use maven to execute jtransc from the command line too: `mvn -f /path/to/jtransc-main-run/pom.xml exec:java`

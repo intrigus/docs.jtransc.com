@@ -11,7 +11,7 @@ You can see [all those classes here](https://github.com/jtransc/jtransc/tree/mas
 
 ## com.jtransc.io.annotations package
 
-See [Annotations](Annotations)
+See [Annotations](/jtransc-rt-core/annotations)
 
 # System
 

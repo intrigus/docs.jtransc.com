@@ -16,6 +16,7 @@ You first have to install Haxe, and in order to use [gdx-backend-jtransc](https:
 In order to install lime. You have to execute the following command: `haxelib setup lime`.
 
 Commands required to generate language-specific binaries:
+
 * C++: `haxelib install hxcpp`
 * C#: `haxelib install hxcs`
 * Java (inception): `haxelib install hxjava`

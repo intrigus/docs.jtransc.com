@@ -3,7 +3,7 @@ layout: default
 title: Gradle
 ---
 
-Gradle supported. [Example here](https://github.com/jtransc/jtransc/blob/master/jtransc-gradle-plugin/example/build.gradle) and [other here](https://github.com/jtransc/gdx-backend-jtransc/blob/master/cuboc-demo/build.gradle)
+Gradle supported. [Example here](https://github.com/jtransc/jtransc/blob/master/jtransc-gradle-plugin/example/build.gradle) and [other here](https://github.com/jtransc/jtransc-examples/blob/master/libgdx/cuboc/build.gradle)
 
 Template:
 

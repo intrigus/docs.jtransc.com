@@ -3,7 +3,9 @@ layout: default
 title: Home
 ---
 
-Welcome to the JTransc wiki!
+## Introduction
+
+Welcome to the JTransc documentation!
 
 Here you can find information:
 
@@ -14,3 +16,9 @@ Here you can find information:
 * And you can find a [Cookbook](Cookbook) with examples to do specific stuff.
 
 You can find [JTransc Blog here](http://blog.jtransc.com/) and a [repository with examples here](https://github.com/jtransc/jtransc-examples)
+
+## Contributions
+
+This site is hosted at github and has its own github repository, so you can fork it, and make a PR :)
+
+* [https://github.com/jtransc/docs.jtransc.com](https://github.com/jtransc/docs.jtransc.com)

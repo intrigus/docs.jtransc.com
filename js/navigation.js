@@ -26,7 +26,14 @@ $(document).ready(function() {
   $(".sidebar-nav a").click(function() {
     if (this.target == "_blank") return true;
 
-    $( "#page-content" ).load( this.href + " #page-content" );
+    $("#page-content").load(this.href + " #page-content", function(html) {
+      try {
+        var title = $(html).filter('title').text();
+        document.title = title;
+      } catch (e) {
+        console.error(e);
+      }
+    });
     history.pushState({}, "my page", this.href);
     updateSidebar(false);
 

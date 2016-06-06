@@ -34,8 +34,19 @@ function updateSidebar(scroll) {
   });
 }
 
+function fixExternalLinksTarget(element) {
+  var base = document.location.protocol + '//' + document.location.host;
+  $(element).find('a').each(function() {
+    var internalLink = (this.href.indexOf(base) == 0);
+    if (!internalLink) {
+      $(this).attr('target', '_blank');
+    }
+  });
+}
+
 $(document).ready(function() {
   updateSidebar(true);
+  fixExternalLinksTarget(document);
 
   var q = getQueryVariable('q')
   if (q !== undefined) {
@@ -49,6 +60,7 @@ $(document).ready(function() {
       try {
         var title = $(html).filter('title').text();
         document.title = title;
+        fixExternalLinksTarget('#page-content')
       } catch (e) {
         console.error(e);
       }

@@ -28,5 +28,5 @@
 
 # Links
 
-* [Blog](http://blog.jtransc.com/){:target="_blank"}
-* [Examples repository](https://github.com/jtransc/jtransc-examples){:target="_blank"}
+* [Blog](http://blog.jtransc.com/)
+* [Examples repository](https://github.com/jtransc/jtransc-examples)

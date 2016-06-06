@@ -17,7 +17,7 @@ Here you can find information:
 * Discover how to do special stuff in some targets using [Annotations](/jtransc-rt-core/annotations) and [Optimized API](/jtransc-rt-core/optimized-api).
 * And you can find a [Cookbook](/cookbook) with examples to do specific stuff.
 
-You can find [JTransc Blog here](http://blog.jtransc.com/){:target="_blank"} and a [repository with examples here](https://github.com/jtransc/jtransc-examples){:target="_blank"}
+You can find [JTransc Blog here](http://blog.jtransc.com/) and a [repository with examples here](https://github.com/jtransc/jtransc-examples)
 
 ## Contributions
 

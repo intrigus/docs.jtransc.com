@@ -3,7 +3,7 @@ layout: default
 title: "Target: haxe"
 ---
 
-You can see [Haxe custom annotations here](JTransc-Annotations#haxe-specific).
+You can see [Haxe custom annotations here](/jtransc-rt-core/annotations).
 
 ## Haxe classes with useful stuff
 

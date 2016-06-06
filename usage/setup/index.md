@@ -27,7 +27,11 @@ Update. After this issue is done [https://github.com/jtransc/jtransc/issues/43](
 
 Gradle plugin provides two tasks per target: runXXX which runs application in debug mode (can be slow on C++), and distXXX which generates a release version of the application.
 
+Debugging is still a work in progress. It will work with the [intelliJ plugin](/usage/intellij).
+
 Target | Description | Gradle | Requirements | Debuggable | Limitations
---- | --- | --- | --- | --- | ---
-Linux | Native desktop 32/64bit application. | `runCpp`, `distCpp` | Linux operating system. `haxelib run lime setup linux`, `haxelib install hxcpp`. | **Yes.** *(How?)* | -
-... | ... | ... | ... | ... | ...
+------ | ----------- | ------ | ------------ | ---------- | -----------
+Linux  | Native desktop 32/64bit application. | `runCpp`, `distCpp` | Linux operating system. `haxelib run lime setup linux`, `haxelib install hxcpp`. | **Not yet** | -
+Windows  | Native desktop 32/64bit application. | `runCpp`, `distCpp` | Windows operating system. `haxelib run lime setup windows`, `haxelib install hxcpp`. | **Not yet** | -
+Javascript  | Node or browser application | `runJs`, `distJs` | A browser or nodejs commandline | **Yes.** Using web inspector | -
+

@@ -28,6 +28,9 @@ This site is hosted at github and has its own github repository, so you can fork
 
 * [https://github.com/jtransc/docs.jtransc.com](https://github.com/jtransc/docs.jtransc.com)
 
+Also, pressing the pencil button available in each page, you can see the corresponding file on github.
+And github will provide another pencil button which will create a fork in your user so you can edit the file and do a PR.
+
 ## Social networks
 
 * [Twitter](http://twitter.com/jtransc)

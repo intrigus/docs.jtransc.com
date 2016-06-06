@@ -3,7 +3,7 @@ layout: default
 title: Gradle
 ---
 
-<img src="/usage/gradle/gradle.svg" width="auto" height="160" />
+<img src="/usage/gradle/gradle.png" width="auto" height="96" />
 
 Gradle supported. [Example here](https://github.com/jtransc/jtransc/blob/master/jtransc-gradle-plugin/example/build.gradle) and [other here](https://github.com/jtransc/jtransc-examples/blob/master/libgdx/cuboc/build.gradle)
 

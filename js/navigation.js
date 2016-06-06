@@ -56,6 +56,27 @@ function refreshDisqus(url) {
   }
 }
 
+function changeToPage(newurl) {
+  $("#page-content").load(newurl + " #page-content", function(html) {
+    try {
+      var newhtml = $(html);
+      var canonicalUrl = newhtml.filter('link[rel="canonical"]').attr('href');
+      document.title = newhtml.filter('title').text();
+      fixExternalLinksTarget('#page-content');
+      $(document.body).animate({scrollTop: 0}, 'fast');
+
+      refreshDisqus(canonicalUrl);
+
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  updateSidebar(false);
+
+  return false;
+}
+
 $(document).ready(function() {
   updateSidebar(true);
   fixExternalLinksTarget(document);
@@ -69,25 +90,16 @@ $(document).ready(function() {
     if (this.target == "_blank") return true;
 
     var newurl = this.href;
+    history.pushState({ url: newurl }, "my page", newurl);
+    return changeToPage(newurl);
+  });
 
-    $("#page-content").load(newurl + " #page-content", function(html) {
-      try {
-        var newhtml = $(html);
-        var canonicalUrl = newhtml.filter('link[rel="canonical"]').attr('href');
-        document.title = newhtml.filter('title').text();
-        fixExternalLinksTarget('#page-content');
-        $(document.body).animate({ scrollTop: 0 }, 'fast');
-
-        refreshDisqus(canonicalUrl);
-
-      } catch (e) {
-        console.error(e);
-      }
-    });
-
-    history.pushState({}, "my page", newurl);
-    updateSidebar(false);
-
-    return false;
+  $(window).on('popstate', function(e) {
+    //console.log(this);
+    //console.log(e);
+    //console.log();
+    e.preventDefault();
+    //return changeToPage(e.originalEvent.state.url);
+    return changeToPage(document.location.href);
   });
 });

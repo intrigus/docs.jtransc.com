@@ -56,7 +56,7 @@ function refreshDisqus(url) {
   }
 }
 
-function changeToPage(newurl) {
+function changeToPage(newurl, gotosidebar) {
   $("#page-content").load(newurl + " #page-content", function(html) {
     try {
       var newhtml = $(html);
@@ -72,7 +72,7 @@ function changeToPage(newurl) {
     }
   });
 
-  updateSidebar(false);
+  updateSidebar(gotosidebar);
 
   return false;
 }
@@ -91,7 +91,7 @@ $(document).ready(function() {
 
     var newurl = this.href;
     history.pushState({ url: newurl }, "my page", newurl);
-    return changeToPage(newurl);
+    return changeToPage(newurl, false);
   });
 
   $(window).on('popstate', function(e) {
@@ -100,6 +100,6 @@ $(document).ready(function() {
     //console.log();
     e.preventDefault();
     //return changeToPage(e.originalEvent.state.url);
-    return changeToPage(document.location.href);
+    return changeToPage(document.location.href, true);
   });
 });

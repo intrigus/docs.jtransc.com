@@ -15,3 +15,16 @@ These is also a couple of projects for multimedia applications using jtransc:
 
 [jtransc-media](/libraries/jtransc-media) - Which provides a very simple and portable high-level API for multimedia
 [gdx-backend-jtransc](/libraries/jtransc-media) - Which provides a gdx-compatible backend so any gdx project will be able to work (still some rough edges)
+
+## How does it work internally?
+
+* It locates all the required dependencies (specifying dependencies, using maven or intelliJ)
+* It includes jtransc-rt-core and jtransc-rt which is a java-6-like rt with some of their methods marked as natives
+* Other dependencies than the RT are included without modifications
+* It uses ASM to generate a class-method-statement-expression AST
+  * That AST is easily serializable
+  * That AST allows feature stripping
+* Your target language don't support gotos? It will generate an AST without gotos. Just plain if/while/switch...
+* It generates your target source code, replacing some classes like String, ArrayList and so on, to make them fast in your target * language.
+* It joins or compiles that code into your final runnable program
+* Eventually that intermediate AST will be able to be generated or consumed. So others could generate that without JVM and others could generate other targets from that AST directly without all the complexities of stack-based IRs.
